@@ -21,11 +21,10 @@
 	   appAvailability.check(
     'com.twitter.android', // Package Name
     function() {           // Success callback
-     navigator.startApp.start([["action", "VIEW"], ["twitter://status?status_id=197752514391715842"]], ...);
+     navigator.startApp.start([["action", "VIEW"], ["twitter://status?status_id=197752514391715842"]]);
     },
     function() {           // Error callback
-       alert('Twitter no hay');
-	   window.open('https://www.twitter.com/mediosprovincia','_system','location=yes')
+	   window.open('https://www.twitter.com/mediosprovincia','_system','location=yes');
     }
 );
 	   
