@@ -21,10 +21,11 @@
 	   appAvailability.check(
     'com.twitter.android', // Package Name
     function() {           // Success callback
-       alert('Twitter hay app');
+     navigator.startApp.start([["action", "VIEW"], ["twitter://status?status_id=197752514391715842"]], ...);
     },
     function() {           // Error callback
        alert('Twitter no hay');
+	   window.open('https://www.twitter.com/mediosprovincia','_system','location=yes')
     }
 );
 	   
@@ -99,7 +100,7 @@
 					</div>
 					<div class="col-xs-12"><p  class="titulo-seccion">Síguenos</p></div>
 					<div class="col-xs-6 ">	<div class="col-xs-12"><a href="#" onclick="window.open('fb://facewebmodal/f?href=https://www.facebook.com/163326517038061','_system','location=yes')" ><img class="img-responsive" src="img/facebook.png"></a></div>	<div class="col-xs-12"><span>MediosProvincia</span></div></div>
-					<div class="col-xs-6 "><a href="#" target="_system" onclick="twitter()"><div class="col-xs-12"><img class="img-responsive" src="img/twitter.png"></div><div class="col-xs-12"><span>@mediosProvincia</span></div></a></div>
+					<div class="col-xs-6 "><a href="#" onclick="window.open('twitter://status?status_id=197752514391715842','_system','location=yes')" target="_system" onclick="twitter()"><div class="col-xs-12"><img class="img-responsive" src="img/twitter.png"></div><div class="col-xs-12"><span>@mediosProvincia</span></div></a></div>
 					
 					<div class="col-xs-12"><p class="titulo-seccion">Escúchanos </p></div>
 					<div class="col-xs-4"><a href="#" onclick="window.open('http://tunein.com/radio/Radio-Provincia-919-s158176/','_system','location=yes')"><img class="img-responsive" src="img/radio_provincia.png"></a></div>
