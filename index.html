@@ -41,19 +41,7 @@
 			);
 	   
 		}
-		function whatsapp(){
-			appAvailability.check(
-				'com.facebook.katana', // Package Name
-				function() {           // Success callback
-				navigator.startApp.start([["action", "SEND"], ["tel:+3804499197"]]);
-				function() {           // Error callback
-				 alert("Instale la app de Whatsapp");
-				}
-			);
-		
-		
-		}
-		
+	
 		
 		
 	   </script>
@@ -413,7 +401,10 @@ $("#secundarias").html("");
 			$("#myCarousel").carousel({interval: 5000, pause: "hover"});
 			})
 			
+			function whatsapp(){
 			
+			cordova.plugins.Whatsapp.send("+5493804499197");
+			}
 			
 			function cargarview(){
 			$("#cargando").html("");
