@@ -1,34 +1,15 @@
 function redsocial(expr,id){ 
     switch (expr) {
       case 3:
-			appAvailability.check(
-				'com.twitter.android', // Package Name
-				function() {           // Success callback
-					        window.plugins.socialsharing.shareViaTwitter('Mira esta noticia de Tiempo Popular', null /* img */, 'http://www.tiempopopular.com.ar/2014/ver_noticia_4S5As4ar2A.php?id_BWw1oeuRYF='+id);
 
-				},
-				function() {           // Error callback
-						window.open('https://twitter.com/intent/tweet?url=http://tiempopopular.com.ar/2014/ver_noticia_4S5As4ar2A.php?id_BWw1oeuRYF='+id'','_system','location=yes');
-				}
-			);
+        window.plugins.socialsharing.shareViaTwitter('Mira esta noticia de Tiempo Popular', null /* img */, 'http://www.tiempopopular.com.ar/2014/ver_noticia_4S5As4ar2A.php?id_BWw1oeuRYF='+id);
             
         break;
       case 2:
-			appAvailability.check(
-				'com.facebook.katana', // Package Name
-				function() {           // Success callback
-					               window.plugins.socialsharing.shareViaFacebook('Mira esta noticia de Tiempo Popular', null /* img */, 'http://www.tiempopopular.com.ar/2014/ver_noticia_4S5As4ar2A.php?id_BWw1oeuRYF='+id, function() {console.log('share ok')}, function(errormsg){console.log(errormsg)});
-
-
-				},
-				function() {           // Error callback
-						window.open('https://www.facebook.com/sharer/sharer.php?u=http://tiempopopular.com.ar/2014/ver_noticia_4S5As4ar2A.php?id_BWw1oeuRYF='+id'','_system','location=yes');
-				}
-			);
+        window.plugins.socialsharing.shareViaFacebook('Mira esta noticia de Tiempo Popular', null /* img */, 'http://www.tiempopopular.com.ar/2014/ver_noticia_4S5As4ar2A.php?id_BWw1oeuRYF='+id, function() {console.log('share ok')}, function(errormsg){console.log(errormsg)});
            
         break;
       case 1:
-	  
             window.plugins.socialsharing.shareViaWhatsApp('Mira esta noticia de Tiempo Popular', null /* img */, 'http://www.tiempopopular.com.ar/2014/ver_noticia_4S5As4ar2A.php?id_BWw1oeuRYF='+id, function() {console.log('share ok')}, function(errormsg){console.log(errormsg)});
            
         break;
