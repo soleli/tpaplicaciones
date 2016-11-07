@@ -63,14 +63,15 @@
 			} 
 		})
         function registrar(){ 
-	
+			
             var nombre = document.getElementById('name').value; 
             var email = document.getElementById('email').value; 
             var regId = document.getElementById('regId').value; 
+			
             if (regId != "") { 
                 if (nombre != "" && email != "") {
-				                    //Enviamos los datos al servidor php 
-                    document.formulario.submit(); 
+				     localStorage.setItem("clave", regId);              
+                    document.formulario.submit();  //Enviamos los datos al servidor php 
 					
 				
                 } 

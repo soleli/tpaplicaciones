@@ -96,7 +96,7 @@ archivoValidacion = "http://www.tiempopopular.com.ar/json/dispositivos.php?jsonc
 							init();
 							}
 						else{
-							 localStorage.setItem("clave", id);
+							
 							location.href="formulario.html?id="+id;
 							
 						}
