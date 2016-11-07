@@ -376,3 +376,16 @@ font-family: iconos;
     padding: 10px;
     border-radius: 20px;
 }
+
+
+#contacto h4{text-shadow: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+	    font-size: 20px;}
+#contacto p{
+text-shadow: none;
+color: #ed3236;
+    font-weight: 800;
+
+}

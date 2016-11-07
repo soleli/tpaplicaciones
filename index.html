@@ -364,13 +364,19 @@ $("#secundarias").html("");
 	<!------------Pagina Contacto--------->
 	<div data-role="page" id="contacto">
 			
-			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;">		
-				<div class="col-xs-9"><p> Contactesé con nosotros </p>				</div>
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b" style="  padding: 5px 0px 5px 0px;">	
+
+				<div class="col-xs-9">
+					<img src="img/medios_provincia.png">
+				</div>	
 				<div class="col-xs-3">
-					<a href="#principal" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
+						<a href="#principal" data-role="button" data-rel="back" data-iconpos="notext"><span class="icon-back"></span></a>
 				</div>		
+						
+					
 			</div>
 			<div data-role="content" class="ui-fondo"  data-theme="fondo">
+			<h4> Contáctese con nosotros </h4>	
 				<div class="col-lg-12">
 					<div id="alertaco" style="display:none;"	class="alert alert-success" role="alert"></div>
 					
@@ -378,11 +384,19 @@ $("#secundarias").html("");
 						<input type="text"  class="form-control"  id="nombre" placeholder="Ingrese su Nombre">
 					</div>
 					<div class="form-group">
-						<textarea name="" id="mensaje" placeholder="Su mensaje" data-mini="false"></textarea>
+						<textarea name="" id="mensaje" placeholder="Ingrese su mensaje" rows="5" data-mini="false"></textarea>
 					</div>
 				   <div class="form-group">
 						<input id="btnDefaultSMS"  class="btn-contacto" onclick="enviarcorreo()" type="submit"   value="Enviar" >
 					</div>
+				</div>
+				<div class="col-lg-12" style="   padding: 20px;">
+					<p><a href="tel:+543804490111">380-4490111</a></p>
+					<p><a href="tel:+543804490277">380-4490277</a></p>
+					<p>TV: <a href="tel:+543804562200">380-4562200</a></p>
+					<p>SMS Radio: <a href="tel:+543804531716">380-4531716</a></p>
+					<p>Whatsapp: <a onclick="whatsapp();" target="_system">380-4236675</a></p>
+					<p><a href="mailto:mediosprovincia-prensa@hotmail.com">mediosprovincia-prensa@hotmail.com</a></p>
 				</div>
 			</div>
 	</div>
