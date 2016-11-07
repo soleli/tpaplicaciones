@@ -47,7 +47,7 @@
 	   </script>
 		
     </head>
-	<body onload="init()">
+	<body >
 	 <!------------Pagina Principal------- -->
 		<div data-role="page" id="principal" data-title="Principal">
 			<div  data-role="panel" data-display="reveal" data-position="left" id="panel1">
@@ -394,7 +394,7 @@ $("#secundarias").html("");
 					<p><a href="tel:+543804490111">380-4490111</a></p>
 					<p><a href="tel:+543804490277">380-4490277</a></p>
 					<p>TV: <a href="tel:+543804562200">380-4562200</a></p>
-					<p>SMS Radio: <a href="tel:+543804531716">380-4531716</a></p>
+					<p>SMS Radio: <a href="sms:+543804531716">380-4531716</a></p>
 					<p>Whatsapp: <a onclick="whatsapp();" target="_system">380-4236675</a></p>
 					<p><a href="mailto:mediosprovincia-prensa@hotmail.com">mediosprovincia-prensa@hotmail.com</a></p>
 				</div>
@@ -403,7 +403,19 @@ $("#secundarias").html("");
 	</body>
 </html>
 
-  
+   <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+		
+		if (localStorage.getItem('clave')){
+		init();
+	
+	}
+	else{
+		 
+         app.initialize();
+
+		 }
+        </script>
 	
 		<script>
 			$(document).ready(function(){
