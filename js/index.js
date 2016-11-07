@@ -1,3 +1,4 @@
+
 var app = { 
     // Application Constructor 
     initialize: function() { 
@@ -94,7 +95,9 @@ archivoValidacion = "http://www.tiempopopular.com.ar/json/dispositivos.php?jsonc
 						//alert(data);
 						if(data>=1){
 						alert("sii");
+						$.getScript( "main.js", function() {
 							init();
+							});
 							}
 						else{
 							
