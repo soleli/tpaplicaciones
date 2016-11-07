@@ -40,8 +40,15 @@
 	
         
 	<SCRIPT TYPE="text/javascript" src="js/jquery-2.0.3.js"></SCRIPT>	
+		<SCRIPT TYPE="text/javascript" src="js/bootstrap.min.js"></SCRIPT>
+		<script type="text/javascript" src="cordova.js"></script>
+		<SCRIPT TYPE="text/javascript" src="js/main.js"></SCRIPT>
         <script type="text/javascript"> 
 		  $( document ).ready(function() {
+		  var Bandera=0;
+		  if(Bandera=1){
+		 init();
+		  }
 			var paramstr = window.location.search.substr(1);
 			var paramarr = paramstr.split ("&");
 			var params = {};
@@ -55,11 +62,13 @@
 			} 
 		})
         function registrar(){ 
+	
             var nombre = document.getElementById('name').value; 
             var email = document.getElementById('email').value; 
             var regId = document.getElementById('regId').value; 
             if (regId != "") { 
-                if (nombre != "" && email != "") { 
+                if (nombre != "" && email != "") {
+				var Bandera=1;
                     //Enviamos los datos al servidor php 
                     document.formulario.submit(); 
 					
