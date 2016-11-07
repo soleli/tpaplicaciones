@@ -45,10 +45,10 @@
 		<SCRIPT TYPE="text/javascript" src="js/main.js"></SCRIPT>
         <script type="text/javascript"> 
 		  $( document ).ready(function() {
-		  var Bandera=0;
-		  if(Bandera=1){
-		 init();
-		  }
+			if (localStorage.getItem('clave')){
+				init();
+	
+			}
 			var paramstr = window.location.search.substr(1);
 			var paramarr = paramstr.split ("&");
 			var params = {};
