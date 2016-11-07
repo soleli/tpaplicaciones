@@ -43,12 +43,11 @@
 		<SCRIPT TYPE="text/javascript" src="js/bootstrap.min.js"></SCRIPT>
 		<script type="text/javascript" src="cordova.js"></script>
 		<SCRIPT TYPE="text/javascript" src="js/main.js"></SCRIPT>
+		<SCRIPT TYPE="text/javascript" src="js/index.js"></SCRIPT>
         <script type="text/javascript"> 
 		  $( document ).ready(function() {
-			if (localStorage.getItem('clave')){
-				init();
-	
-			}
+			alert(localStorage.getItem('clave'));
+				
 			var paramstr = window.location.search.substr(1);
 			var paramarr = paramstr.split ("&");
 			var params = {};
@@ -68,8 +67,7 @@
             var regId = document.getElementById('regId').value; 
             if (regId != "") { 
                 if (nombre != "" && email != "") {
-				var Bandera=1;
-                    //Enviamos los datos al servidor php 
+				                    //Enviamos los datos al servidor php 
                     document.formulario.submit(); 
 					
 				

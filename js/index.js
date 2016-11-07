@@ -84,7 +84,7 @@ var app = {
     } 
 };
 
-function dispo(id){
+function dispo(id){ //si ya exist o no un dispositivo con la clave
 //alert(id);
 archivoValidacion = "http://www.tiempopopular.com.ar/json/dispositivos.php?jsoncallback=?"
 					$.getJSON( archivoValidacion, {id:id})
