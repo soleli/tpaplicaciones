@@ -94,10 +94,7 @@ archivoValidacion = "http://www.tiempopopular.com.ar/json/dispositivos.php?jsonc
 					{ 
 						//alert(data);
 						if(data>=1){
-						alert("sii");
-						$.getScript( "main.js", function() {
-							init();
-							});
+							location.href="index.html";
 							}
 						else{
 							
