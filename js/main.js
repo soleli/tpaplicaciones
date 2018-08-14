@@ -2,15 +2,15 @@ function redsocial(expr,id){
     switch (expr) {
       case 3:
 
-        window.plugins.socialsharing.shareViaTwitter('Mira esta noticia de Tiempo Popular', null /* img */, 'http://www.tiempopopular.com.ar/2014/ver_noticia_4S5As4ar2A.php?id_BWw1oeuRYF='+id);
+        window.plugins.socialsharing.shareViaTwitter('Mira esta noticia de Tiempo Popular', null /* img */, 'http://www.tiempopopular.com.ar/2018/ver_noticia_4S5As4ar2A.php?id_BWw1oeuRYF='+id);
             
         break;
       case 2:
-        window.plugins.socialsharing.shareViaFacebook('Mira esta noticia de Tiempo Popular', null /* img */, 'http://www.tiempopopular.com.ar/2014/ver_noticia_4S5As4ar2A.php?id_BWw1oeuRYF='+id, function() {console.log('share ok')}, function(errormsg){console.log(errormsg)});
+        window.plugins.socialsharing.shareViaFacebook('Mira esta noticia de Tiempo Popular', null /* img */, 'http://www.tiempopopular.com.ar/2018/ver_noticia_4S5As4ar2A.php?id_BWw1oeuRYF='+id, function() {console.log('share ok')}, function(errormsg){console.log(errormsg)});
            
         break;
       case 1:
-            window.plugins.socialsharing.shareViaWhatsApp('Mira esta noticia de Tiempo Popular', null /* img */, 'http://www.tiempopopular.com.ar/2014/ver_noticia_4S5As4ar2A.php?id_BWw1oeuRYF='+id, function() {console.log('share ok')}, function(errormsg){console.log(errormsg)});
+            window.plugins.socialsharing.shareViaWhatsApp('Mira esta noticia de Tiempo Popular', null /* img */, 'http://www.tiempopopular.com.ar/2018/ver_noticia_4S5As4ar2A.php?id_BWw1oeuRYF='+id, function() {console.log('share ok')}, function(errormsg){console.log(errormsg)});
            
         break;
       default:
@@ -36,7 +36,7 @@ function init()
 					
 						"<div class='item active'>"+
 						"<a href='#noticia1' data-transition='flip'  onclick='cargar("+data2.id_Noticia+");'>"+
-							"<img  src='http://tiempopopular.com.ar/2014/imagenes/"+data2.url+"_s.jpg'>"+
+							"<img  src='http://tiempopopular.com.ar/2018/img/noticias/"+data2.url+"_t.jpg'>"+
 							"<div class='carousel-caption'>"+
 									"<h1>"+data2.titulo+"</h1>"+
 							"</div> </a></div>"
@@ -47,7 +47,7 @@ function init()
 				
 						"<div class='item'>"+
 							"<a href='#noticia1' data-transition='flip'  onclick='cargar("+data2.id_Noticia+");'>"+
-						"<img  class='img-responsive' src='http://tiempopopular.com.ar/2014/imagenes/"+data2.url+"_s.jpg'>"+
+						"<img  class='img-responsive' src='http://tiempopopular.com.ar/2018/img/noticias/"+data2.url+"_t.jpg'>"+
 						"<div class='carousel-caption'>"+
 								"<h1>"+data2.titulo+"</h1>"+
 								
@@ -92,7 +92,7 @@ $("#secundarias").html("");
 				"<a  onclick='redsocial("+1+","+data2.id_Noticia+")'><span class='icon-whatsapp'></span></a>"+
 				"<a onclick='redsocial("+2+","+data2.id_Noticia+")'><span class='icon-facebook'></span></a>"+
 				"<a onclick='redsocial("+3+","+data2.id_Noticia+")'><span class='icon-twitter'></span></a></div>"+
-			"<img class='img-responsive' src='http://tiempopopular.com.ar/2014/imagenes/"+data2.url+"_s.jpg'>"+
+			"<img class='img-responsive' src='http://tiempopopular.com.ar/2018/img/noticias/"+data2.url+"_t.jpg'>"+
 			" </a> <hr>"
 			);
 		});
@@ -118,7 +118,7 @@ $("#secundarias").html("");
 				"<a  onclick='redsocial("+1+","+data2.id_Noticia+")'><span class='icon-whatsapp'></span></a>"+
 				"<a onclick='redsocial("+2+","+data2.id_Noticia+")'><span class='icon-facebook'></span></a>"+
 				"<a onclick='redsocial("+3+","+data2.id_Noticia+")'><span class='icon-twitter'></span></a></div>"+
-			"<img class='img-responsive' src='http://tiempopopular.com.ar/2014/imagenes/"+data2.url+"_s.jpg'>"+
+			"<img class='img-responsive' src='http://tiempopopular.com.ar/2018/img/noticias/"+data2.url+"_t.jpg'>"+
 			" </a> <hr>"
 				);
 			});
@@ -136,7 +136,7 @@ $("#secundarias").html("");
 							
 							"<div class='row'><a href='#noticia1' data-transition='flip'  onclick='cargar("+data2.id_Noticia+");'>"+
 						
-				"<div class='col-xs-12 col-sm-12'><div class='box-img-secundarias'><img  class='img-responsive' src='http://tiempopopular.com.ar/2014/imagenes/"+data2.url+"_s.jpg'></div>"+
+				"<div class='col-xs-12 col-sm-12'><div class='box-img-secundarias'><img  class='img-responsive' src='http://tiempopopular.com.ar/2018/img/noticias/"+data2.url+"_t.jpg'></div>"+
 				"<div class='box-titulo-secundarias'><H1 class='titulo_segundas'>"+data2.titulo+"</h1></div></div>"+
 				"<div class='redes'>"+
 					"<a  onclick='redsocial("+1+","+data2.id_Noticia+")'><span class='icon-whatsapp'></span></a>"+
@@ -175,11 +175,11 @@ function cargar(id) {
 								"</div>"
 							);
 		}
-		else {	$("#noticia").append( "<img  src='http://tiempopopular.com.ar/2014/imagenes/"+data.url+"_s.jpg'>"); }
+		else {	$("#noticia").append( "<img  src='http://tiempopopular.com.ar/2018/img/noticias/"+data.url+"_t.jpg'>"); }
 		if(data.audio!=null){
 			$("#noticia").append(
 				"<audio controls>"+
-					"<source src='http://tiempopopular.com.ar/2014/audios/"+data.audio+"' type='audio/mpeg'>"+
+					"<source src='http://tiempopopular.com.ar/2018/audios/"+data.audio+"' type='audio/mpeg'>"+
 				"</audio>"
 			);
 		}
@@ -215,7 +215,7 @@ function cargar(id) {
 							
 							"<div class='row'><a href='#noticia1' data-transition='flip'  onclick='cargar("+data.id_Noticia+");'>"+
 						
-				"<div class='col-xs-12 col-sm-12'><div class='box-img-secundarias'><img  class='img-responsive' src='http://tiempopopular.com.ar/2014/imagenes/"+data.url+"_s.jpg'></div>"+
+				"<div class='col-xs-12 col-sm-12'><div class='box-img-secundarias'><img  class='img-responsive' src='http://tiempopopular.com.ar/2018/img/noticias/"+data.url+"_t.jpg'></div>"+
 				"<div class='box-titulo-secundarias'><H1 class='titulo_segundas'>"+data.titulo+"</h1></div></div>"+
 				"<div class='redes'>"+
 					"<a  onclick='redsocial("+1+","+data.id_Noticia+")'><span class='icon-whatsapp'></span></a>"+
