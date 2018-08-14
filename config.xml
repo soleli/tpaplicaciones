@@ -73,7 +73,6 @@
 
 	<gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" source="npm"/>
-	<gap:plugin name="com.ohh2ahh.plugins.appavailability" />
-	<plugin name="com.venkykowshik.startapp" spec="0.0.1" source="pgb" />
+	
 
 </widget>
