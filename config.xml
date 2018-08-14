@@ -68,7 +68,6 @@
 	
 	<gap:platform name="blackberry" />
 	<gap:platform name="winphone" />
-	<gap:plugin name="com.phonegap.plugins.pushplugin"/> 
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
 
 
